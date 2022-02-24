@@ -8,7 +8,7 @@ module Rswag
 
       def call(env)
         if base_path?(env)
-          redirect_uri = 'api/docs/index.html'
+          redirect_uri = 'docs/index.html'
           return [301, { 'Location' => redirect_uri }, []]
         end
 
